@@ -1,9 +1,0 @@
-C:\GitHub\BuecherSortierung\my_scanner\target\debug\deps\tokio_rustls-6fcb2b4cc82b3cc0.d: C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-rustls-0.26.4\src\lib.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-rustls-0.26.4\src\client.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-rustls-0.26.4\src\common\mod.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-rustls-0.26.4\src\common\handshake.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-rustls-0.26.4\src\server.rs
-
-C:\GitHub\BuecherSortierung\my_scanner\target\debug\deps\libtokio_rustls-6fcb2b4cc82b3cc0.rmeta: C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-rustls-0.26.4\src\lib.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-rustls-0.26.4\src\client.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-rustls-0.26.4\src\common\mod.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-rustls-0.26.4\src\common\handshake.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-rustls-0.26.4\src\server.rs
-
-C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-rustls-0.26.4\src\lib.rs:
-C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-rustls-0.26.4\src\client.rs:
-C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-rustls-0.26.4\src\common\mod.rs:
-C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-rustls-0.26.4\src\common\handshake.rs:
-C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-rustls-0.26.4\src\server.rs:
