@@ -1,0 +1,8 @@
+C:\GitHub\BuecherSortierung\my_scanner\target\debug\deps\percent_encoding-503c068a1cd7389b.d: C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\percent-encoding-2.3.2\src\lib.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\percent-encoding-2.3.2\src\ascii_set.rs
+
+C:\GitHub\BuecherSortierung\my_scanner\target\debug\deps\libpercent_encoding-503c068a1cd7389b.rlib: C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\percent-encoding-2.3.2\src\lib.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\percent-encoding-2.3.2\src\ascii_set.rs
+
+C:\GitHub\BuecherSortierung\my_scanner\target\debug\deps\libpercent_encoding-503c068a1cd7389b.rmeta: C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\percent-encoding-2.3.2\src\lib.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\percent-encoding-2.3.2\src\ascii_set.rs
+
+C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\percent-encoding-2.3.2\src\lib.rs:
+C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\percent-encoding-2.3.2\src\ascii_set.rs:

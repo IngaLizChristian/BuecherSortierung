@@ -1,0 +1,9 @@
+C:\GitHub\BuecherSortierung\my_scanner\target\debug\deps\hyper_rustls-b3c65f62c65c35d5.d: C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-rustls-0.27.7\src\lib.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-rustls-0.27.7\src\config.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-rustls-0.27.7\src\connector.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-rustls-0.27.7\src\connector\builder.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-rustls-0.27.7\src\stream.rs
+
+C:\GitHub\BuecherSortierung\my_scanner\target\debug\deps\libhyper_rustls-b3c65f62c65c35d5.rmeta: C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-rustls-0.27.7\src\lib.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-rustls-0.27.7\src\config.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-rustls-0.27.7\src\connector.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-rustls-0.27.7\src\connector\builder.rs C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-rustls-0.27.7\src\stream.rs
+
+C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-rustls-0.27.7\src\lib.rs:
+C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-rustls-0.27.7\src\config.rs:
+C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-rustls-0.27.7\src\connector.rs:
+C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-rustls-0.27.7\src\connector\builder.rs:
+C:\Users\inga_.MONSTERCHEN\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-rustls-0.27.7\src\stream.rs:

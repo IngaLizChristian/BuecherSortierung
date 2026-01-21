@@ -1,0 +1,8 @@
+[package]
+name = "my_scanner"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# kein schreibfehler, is der name von ner library
+reqwest = { version = "0.13.1", features = ["blocking"] }
