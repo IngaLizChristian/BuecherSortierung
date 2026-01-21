@@ -1,5 +1,6 @@
 use std::io::{self, BufRead};
 
+use rusqlite::{Connection, Result};
 use serde::Deserialize;
 
 #[derive(Deserialize, Debug)]
@@ -18,6 +19,19 @@ struct VolumeInfo {
 }
 
 fn main() {
+    //öffnen der connection zur DB
+    let conn = Connection::open("bibDB.db").unwrap();
+    //erstellen der büchertabelle
+    let _ = conn.execute(
+        "CREATE TABLE books (
+            titel    TEXT,
+            authors  BLOB,
+            publishedDate  TEXT
+        )",
+        (), // empty list of parameters.
+    );
+    //erstellen der autoren
+    //erstellen der schreibt tabelle
     println!("ISBN einlesen");
 
     for isbn in io::stdin().lock().lines() {
@@ -33,8 +47,19 @@ fn main() {
             .expect("could not read");
 
         let response: TestingSerde = serde_json::from_str(&response_text).unwrap();
-
-        dbg!(response_text);
+        println!("ResponseText: {response_text}");
         println!("{response:?}");
+
+        //Datenbank befüllen
+        assert!(response.items.len() == 1);
+        conn.execute(
+            "INSERT INTO books (titel, authors, publishedDate) VALUES (?1, ?2, ?3)",
+            (
+                &response.items[0].volumeInfo.title,
+                &response.items[0].volumeInfo.authors[0],
+                &response.items[0].volumeInfo.publishedDate,
+            ),
+        )
+        .unwrap();
     }
 }
