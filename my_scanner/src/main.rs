@@ -21,18 +21,44 @@ struct VolumeInfo {
 fn main() {
     //öffnen der connection zur DB
     let conn = Connection::open("bibDB.db").unwrap();
-    //erstellen der büchertabelle
-    let _ = conn.execute(
+    //Erstellen der Büchertabelle
+    conn.execute(
         "CREATE TABLE books (
             titel    TEXT,
             authors  BLOB,
             publishedDate  TEXT
         )",
         (), // empty list of parameters.
-    );
-    //erstellen der autoren
-    //erstellen der schreibt tabelle
+    )
+    .unwrap();
+
+    //Erstellen der Autorentabelle
+    conn.execute(
+        "CREATE TABLE authors (
+            titel    TEXT,
+            authors  BLOB,
+            publishedDate  TEXT
+        )",
+        (), // empty list of parameters.
+    )
+    .unwrap();
+
+    //erstellen der "Wer hat was geschrieben" - Tabelle
+    conn.execute(
+        "CREATE TABLE whoWroteWhat (
+            titel    TEXT,
+            authors  BLOB,
+            publishedDate  TEXT
+        )",
+        (), // empty list of parameters.
+    )
+    .unwrap();
+
+    //------------------------------------------------------------------------ENDE ERSTELLUNG DER DATENBANKEN------------------------------------------------------------------------
+    //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     println!("ISBN einlesen");
+    //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------ANFANG DATEN EINLESEN----------------------------------------------------------------------------------
 
     for isbn in io::stdin().lock().lines() {
         let isbn = isbn.unwrap();
