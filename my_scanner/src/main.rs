@@ -14,30 +14,64 @@ struct Item {
 #[derive(Deserialize, Debug)]
 struct VolumeInfo {
     title: String,
-    authors: Vec<String>,
+    author: Vec<String>,
     publishedDate: String,
 }
 
 fn main() {
-    //öffnen der connection zur DB
+    //Öffnen der connection zur DB
     let conn = Connection::open("bibDB.db").unwrap();
     //Erstellen der Büchertabelle
     conn.execute(
         "CREATE TABLE books (
-            titel    TEXT,
-            authors  BLOB,
-            publishedDate  TEXT
+            isbn                    INTEGER NOT NULL,
+            copy_number             INTEGER NOT NULL,
+            titel                   TEXT,
+            page_count              INTEGER,
+            release_date            DATE,
+            copyright_date          DATE,
+            cover_type              VARCHAR(50),
+            mature_rating           VARCHAR(255),
+            language                CHAR(2),
+            cover_image_name        VARCHAR(255),
+            cover_image_path        TEXT,
+            liked_rating            SMALLINT,
+            description             TEXT,
+            place_of_discovery      VARCHAR(255),
+            date_of_aquirement      DATE,
+            series_bool             BOOLEAN,
+            series_part
+
+            PRIMARY KEY (isbn, copy_number),
+            UNIQUE(isbn),
+            UNIQUE(copy_number)
         )",
         (), // empty list of parameters.
     )
     .unwrap();
+    //-------------------------------------------WICHTIGE HINWEISE ZU DEN BÜCHERN----------------------------------------------------------------
+    /*
+        Bild einfügen
+            INSERT INTO books (cover_image_name, cover_image_path)
+            VALUES ('logo', LOAD_FILE('/pfad/zum/bild.png'));
+
+        Bild auslesen
+            SELECT cover_image_name, cover_image_path FROM books WHERE isbn = XXXXX;
+
+        bild anzeigen, bsp php
+            echo '<img src="' . $row['cover_image_path'] . '" alt="Titelbild">';
+    */
+    //-------------------------------------------------------------------------------------------------------------------------------------------
 
     //Erstellen der Autorentabelle
     conn.execute(
-        "CREATE TABLE authors (
-            titel    TEXT,
-            authors  BLOB,
-            publishedDate  TEXT
+        "CREATE TABLE author (
+            author_id               INTEGER NOT NULL,
+            author_first_name       VARCHAR(255),
+            author_last_name        VARCHAR(255),
+            author_sex              CHAR(1),
+            PRIMARY KEY (author_id),
+            UNIQUE(author_id)
         )",
         (), // empty list of parameters.
     )
@@ -45,9 +79,9 @@ fn main() {
 
     //erstellen der "Wer hat was geschrieben" - Tabelle
     conn.execute(
-        "CREATE TABLE whoWroteWhat (
+        "CREATE TABLE wrote (
             titel    TEXT,
-            authors  BLOB,
+            author  BLOB,
             publishedDate  TEXT
         )",
         (), // empty list of parameters.
@@ -79,10 +113,10 @@ fn main() {
         //Datenbank befüllen
         assert!(response.items.len() == 1);
         conn.execute(
-            "INSERT INTO books (titel, authors, publishedDate) VALUES (?1, ?2, ?3)",
+            "INSERT INTO books (titel, author, publishedDate) VALUES (?1, ?2, ?3)",
             (
                 &response.items[0].volumeInfo.title,
-                &response.items[0].volumeInfo.authors[0],
+                &response.items[0].volumeInfo.author[0],
                 &response.items[0].volumeInfo.publishedDate,
             ),
         )
