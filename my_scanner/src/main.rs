@@ -39,8 +39,6 @@ fn main() {
             description             TEXT,
             place_of_discovery      VARCHAR(255),
             date_of_aquirement      DATE,
-            series_bool             BOOLEAN,
-            series_part
 
             PRIMARY KEY (isbn, copy_number),
             UNIQUE(isbn),
